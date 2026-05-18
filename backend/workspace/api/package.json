@@ -1,0 +1,26 @@
+{
+  "name": "api-test-project",
+  "_buildId": "id_MC81OmFIVnBZMlhsdktEbHVwNDZTa1UzVlE9PTo5MTJiYjNiMg==",
+  "version": "1.0.0",
+  "_deployId": "id_MS81OmFIVnBZMlhsdktEbHVwNDZTa1UzVlE9PTo5MTJiYjNiMg==",
+  "description": "API testing project with Playwright",
+  "_releaseId": "id_Mi81OmFIVnBZMlhsdktEbHVwNDZTa1UzVlE9PTo5MTJiYjNiMg==",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:api": "playwright test tests/1-get-apiv1activities.spec.ts",
+    "test:get-activities": "playwright test tests/get-activities.spec.ts",
+    "test:get-activities:local": "API_BASE_URL=http://localhost:5000 playwright test tests/get-activities.spec.ts",
+    "test:get-activities:report": "playwright test tests/get-activities.spec.ts --reporter=html --output=test-results",
+    "test:report": "playwright show-report test-results",
+    "test:get-activities:ci": "playwright test tests/get-activities.spec.ts --reporter=junit --output=test-results"
+  },
+  "_versionId": "id_My81OmFIVnBZMlhsdktEbHVwNDZTa1UzVlE9PTo5MTJiYjNiMg==",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "_buildHash": "NC81OmFIVnBZMlhsdktEbHVwNDZTa1UzVlE9PTo5MTJiYjNiMg=="
+}

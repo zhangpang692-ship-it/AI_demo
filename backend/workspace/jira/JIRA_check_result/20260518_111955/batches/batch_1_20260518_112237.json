@@ -1,0 +1,136 @@
+[
+  {
+    "key": "SRDAIV-32291",
+    "link": "http://jira.transsion.com/browse/SRDAIV-32291",
+    "country": "EE1",
+    "reporter": "Anton.Nikolaev",
+    "priority": "Critical",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Summary 环境标签",
+        "description": "标题以【ITFT】开头，不符合标准环境标签要求",
+        "ref": "ZT-1/§1.2"
+      },
+      {
+        "field": "Risk 三处不一致",
+        "description": "Summary【must】, Risk=must, 但 Description 未明确频率描述",
+        "ref": "ZT-2/§1.4"
+      },
+      {
+        "field": "Description 缺少 Expected Result",
+        "description": "描述中缺少独立标注的 Expected Result 段落",
+        "ref": "ZT-4/§1.5"
+      },
+      {
+        "field": "Environment 字段为空",
+        "description": "Environment 字段为空，缺少 Device ID",
+        "ref": "ZT-5/§1.1"
+      }
+    ],
+    "suggestions": [
+      "将标题开头的【ITFT】移除，以【Test Environment】开头",
+      "在 Description 中补充 Test Count 频率描述",
+      "补充 Expected Result 段落",
+      "在 Environment 字段补充 Device ID"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-32000",
+    "link": "http://jira.transsion.com/browse/SRDAIV-32000",
+    "country": "EE1",
+    "reporter": "Maria.Komarova",
+    "priority": "Blocker",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Summary 环境标签",
+        "description": "标题以【ITFT】开头，不符合标准环境标签要求",
+        "ref": "ZT-1/§1.2"
+      },
+      {
+        "field": "Description 缺少 Expected Result",
+        "description": "描述中缺少独立标注的 Expected Result 段落",
+        "ref": "ZT-4/§1.5"
+      }
+    ],
+    "suggestions": [
+      "将标题开头的【ITFT】移除，以【Test Environment】开头",
+      "补充 Expected Result 段落"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-31999",
+    "link": "http://jira.transsion.com/browse/SRDAIV-31999",
+    "country": "EE1",
+    "reporter": "Anton.Nikolaev",
+    "priority": "Critical",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Summary 环境标签",
+        "description": "标题以【ITFT】开头，不符合标准环境标签要求",
+        "ref": "ZT-1/§1.2"
+      },
+      {
+        "field": "Risk 三处不一致",
+        "description": "Summary【must】, Risk=must, 但 Description 未明确频率描述",
+        "ref": "ZT-2/§1.4"
+      },
+      {
+        "field": "Description 缺少 Expected Result",
+        "description": "描述中缺少独立标注的 Expected Result 段落",
+        "ref": "ZT-4/§1.5"
+      },
+      {
+        "field": "Environment 字段为空",
+        "description": "Environment 字段为空，缺少 Device ID",
+        "ref": "ZT-5/§1.1"
+      }
+    ],
+    "suggestions": [
+      "将标题开头的【ITFT】移除，以【Test Environment】开头",
+      "在 Description 中补充 Test Count 频率描述",
+      "补充 Expected Result 段落",
+      "在 Environment 字段补充 Device ID"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-29389",
+    "link": "http://jira.transsion.com/browse/SRDAIV-29389",
+    "country": "EE1",
+    "reporter": "Anton.Nikolaev",
+    "priority": "Critical",
+    "status": "Verified",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Summary 环境标签",
+        "description": "标题以【Test】开头，不符合标准环境标签要求",
+        "ref": "ZT-1/§1.2"
+      },
+      {
+        "field": "Risk 三处不一致",
+        "description": "Summary【must】, Risk=must, 但 Description 未明确频率描述",
+        "ref": "ZT-2/§1.4"
+      },
+      {
+        "field": "Environment 字段为空",
+        "description": "Environment 字段为空，缺少 Device ID",
+        "ref": "ZT-5/§1.1"
+      }
+    ],
+    "suggestions": [
+      "将标题开头的【Test】改为【Test Environment】",
+      "在 Description 中补充 Test Count 频率描述",
+      "在 Environment 字段补充 Device ID"
+    ],
+    "comment_posted": true
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "key": "SRDAIV-35125",
+    "link": "http://jira.transsion.com/browse/SRDAIV-35125",
+    "country": "India",
+    "reporter": "Patil.Utkarsha",
+    "priority": "Blocker",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Risk 三处不一致",
+        "description": "Summary【Frequency】为【Must】，Risk 字段为 must，但 Description 写 Reproducible: 3/3，不符合 Must 标准（需 5/5, 10/10, 15/15, 20/20）",
+        "ref": "ZT-2/§1.4"
+      },
+      {
+        "field": "Bug等级 Severity vs Priority",
+        "description": "截图 Severity=Critical，Priority=Blocker，不一致且 Comment 无说明",
+        "ref": "ZT-6/§1.8"
+      },
+      {
+        "field": "TCID",
+        "description": "TCID 值为 '-'，规范要求 '/'",
+        "ref": "§1.1"
+      }
+    ],
+    "suggestions": [
+      "将 Description 中的 Reproducible: 3/3 调整为符合 Must 标准的频率表述（如 5/5 或 10/10）",
+      "将 Priority 调整为 Critical 以匹配截图 Severity，或在 Comment 中说明不一致原因",
+      "将 TCID 字段值从 '-' 改为 '/'"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-35102",
+    "link": "http://jira.transsion.com/browse/SRDAIV-35102",
+    "country": "Indonesia",
+    "reporter": "dimas.nugroho",
+    "priority": "Blocker",
+    "status": "Resolved",
+    "compliance_ok": true,
+    "problems": [],
+    "suggestions": [],
+    "comment_posted": false
+  },
+  {
+    "key": "SRDAIV-35099",
+    "link": "http://jira.transsion.com/browse/SRDAIV-35099",
+    "country": "Indonesia",
+    "reporter": "brahmantyo.3rd",
+    "priority": "Blocker",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Description 缺少 Actual Result",
+        "description": "描述中缺少明确标注的 Actual Result 独立段落",
+        "ref": "ZT-4/§1.5"
+      }
+    ],
+    "suggestions": [
+      "补充明确的 Actual Result 标题段落，描述实际观察到的行为"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-35096",
+    "link": "http://jira.transsion.com/browse/SRDAIV-35096",
+    "country": "Indonesia",
+    "reporter": "brahmantyo.3rd",
+    "priority": "Critical",
+    "status": "Fixed",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Description 缺少 Actual Result",
+        "description": "描述中缺少明确标注的 Actual Result 独立段落，仅 Problem 部分说明了现象",
+        "ref": "ZT-4/§1.5"
+      }
+    ],
+    "suggestions": [
+      "补充明确的 Actual Result 标题段落，描述实际观察到的行为"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-34563",
+    "link": "http://jira.transsion.com/browse/SRDAIV-34563",
+    "country": "India",
+    "reporter": "Patil.Utkarsha",
+    "priority": "Critical",
+    "status": "Reopened",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "TCID",
+        "description": "TCID 值为 '-'，规范要求 '/'",
+        "ref": "§1.1"
+      }
+    ],
+    "suggestions": [
+      "将 TCID 字段值从 '-' 改为 '/'"
+    ],
+    "comment_posted": true
+  }
+]

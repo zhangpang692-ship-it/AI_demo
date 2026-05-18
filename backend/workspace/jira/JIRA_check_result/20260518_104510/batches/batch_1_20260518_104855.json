@@ -1,0 +1,72 @@
+[
+  {
+    "key": "SRDAIV-31999",
+    "link": "http://jira.transsion.com/browse/SRDAIV-31999",
+    "country": "EE1",
+    "reporter": "Anton.Nikolaev",
+    "priority": "Critical",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "标题环境标签",
+        "description": "标题以【ITFT】开头，不符合标准要求的【TestEnvironment】/【Test Environment】等",
+        "ref": "§ZT-1/§1.2"
+      },
+      {
+        "field": "Risk三处不一致",
+        "description": "Summary标签【must】和Risk字段must一致，但Description正文中未明确频率描述",
+        "ref": "§ZT-2/§1.4"
+      },
+      {
+        "field": "Description缺少Expected Result",
+        "description": "描述中缺少D) Expected Result部分",
+        "ref": "§ZT-4/§1.5"
+      },
+      {
+        "field": "Environment字段为空",
+        "description": "Environment字段未填写，缺少Device ID",
+        "ref": "§ZT-5/§1.1"
+      }
+    ],
+    "suggestions": [
+      "修改标题开头为【Test Environment】",
+      "在Description中补充频率描述（Test Count）",
+      "补充Expected Result部分",
+      "在Environment字段补充Device ID"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-29389",
+    "link": "http://jira.transsion.com/browse/SRDAIV-29389",
+    "country": "EE1",
+    "reporter": "Anton.Nikolaev",
+    "priority": "Critical",
+    "status": "Verified",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "标题环境标签",
+        "description": "标题以【Test】开头（缩写），不符合标准要求的【TestEnvironment】/【Test Environment】",
+        "ref": "§ZT-1/§1.2"
+      },
+      {
+        "field": "Risk三处不一致",
+        "description": "Summary标签【must】和Risk字段must一致，但Description正文中未明确频率描述",
+        "ref": "§ZT-2/§1.4"
+      },
+      {
+        "field": "Environment字段为空",
+        "description": "Environment字段未填写，缺少Device ID",
+        "ref": "§ZT-5/§1.1"
+      }
+    ],
+    "suggestions": [
+      "修改标题开头【Test】为【TestEnvironment】或【Test Environment】",
+      "在Description中补充频率描述（Test Count）",
+      "在Environment字段补充Device ID"
+    ],
+    "comment_posted": true
+  }
+]

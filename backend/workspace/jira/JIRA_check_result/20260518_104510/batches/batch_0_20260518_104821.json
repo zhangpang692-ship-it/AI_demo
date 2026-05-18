@@ -1,0 +1,118 @@
+[
+  {
+    "key": "SRDAIV-35125",
+    "link": "http://jira.transsion.com/browse/SRDAIV-35125",
+    "country": "India",
+    "reporter": "Patil.Utkarsha",
+    "priority": "Blocker",
+    "status": "Fixed",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Risk 三处不一致",
+        "description": "Summary【Frequency】为【Must】, Risk字段为must, 但Description写的是Reproducible: 3/3而非Must对应的5/5/10/10标准",
+        "ref": "§ZT-2/§1.4"
+      },
+      {
+        "field": "Severity vs Priority不一致",
+        "description": "图片Severity=Critical但Priority=Blocker，且Comment无备注说明原因",
+        "ref": "§ZT-6/§1.8"
+      },
+      {
+        "field": "TCID",
+        "description": "TCID填'-'而非标准要求的'/'",
+        "ref": "§1.1"
+      }
+    ],
+    "suggestions": [
+      "将Description中的Reproducible: 3/3改为Must对应的标准表述（如5/5或10/10）",
+      "将Priority调整为Critical或在Comment中说明Severity与Priority不一致的原因",
+      "将TCID字段值从'-'改为'/'"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-35102",
+    "link": "http://jira.transsion.com/browse/SRDAIV-35102",
+    "country": "Indonesia",
+    "reporter": "dimas.nugroho",
+    "priority": "Blocker",
+    "status": "Resolved",
+    "compliance_ok": true,
+    "problems": [],
+    "suggestions": [],
+    "comment_posted": false
+  },
+  {
+    "key": "SRDAIV-35099",
+    "link": "http://jira.transsion.com/browse/SRDAIV-35099",
+    "country": "Indonesia",
+    "reporter": "brahmantyo.3rd",
+    "priority": "Blocker",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "Description缺少Actual Result",
+        "description": "描述中缺少明确标注的Actual Result部分",
+        "ref": "§ZT-4/§1.5"
+      }
+    ],
+    "suggestions": [
+      "在Description中补充C) Actual Result部分，详细描述实际现象"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-32291",
+    "link": "http://jira.transsion.com/browse/SRDAIV-32291",
+    "country": "EE1",
+    "reporter": "Anton.Nikolaev",
+    "priority": "Critical",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "标题环境标签",
+        "description": "标题以【ITFT】开头，不符合标准要求的【TestEnvironment】/【Test Environment】等",
+        "ref": "§ZT-1/§1.2"
+      },
+      {
+        "field": "Environment字段为空",
+        "description": "Environment字段未填写，缺少Device ID",
+        "ref": "§ZT-5/§1.1"
+      },
+      {
+        "field": "缺少Bug等级截图",
+        "description": "附件中未找到Bug等级计算表截图",
+        "ref": "§1.8"
+      }
+    ],
+    "suggestions": [
+      "修改标题开头为【Test Environment】或【Production Environment】",
+      "在Environment字段补充Device ID",
+      "添加Bug等级计算表截图附件"
+    ],
+    "comment_posted": true
+  },
+  {
+    "key": "SRDAIV-32000",
+    "link": "http://jira.transsion.com/browse/SRDAIV-32000",
+    "country": "EE1",
+    "reporter": "Maria.Komarova",
+    "priority": "Blocker",
+    "status": "Resolved",
+    "compliance_ok": false,
+    "problems": [
+      {
+        "field": "标题环境标签",
+        "description": "标题以【ITFT】开头，不符合标准要求的【TestEnvironment】/【Test Environment】等",
+        "ref": "§ZT-1/§1.2"
+      }
+    ],
+    "suggestions": [
+      "修改标题开头为【Test Environment】或移除【ITFT】前缀"
+    ],
+    "comment_posted": true
+  }
+]

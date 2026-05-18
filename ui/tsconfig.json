@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "_buildId": "id_MC81OmFIVnBZMlhsdktEbHVwNDZSSGhyVXc9PTphMzhlMDY1MQ==",
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "_deployId": "id_MS81OmFIVnBZMlhsdktEbHVwNDZSSGhyVXc9PTphMzhlMDY1MQ==",
+  "exclude": [
+    "node_modules"
+  ],
+  "_releaseId": "id_Mi81OmFIVnBZMlhsdktEbHVwNDZSSGhyVXc9PTphMzhlMDY1MQ==",
+  "_versionId": "id_My81OmFIVnBZMlhsdktEbHVwNDZSSGhyVXc9PTphMzhlMDY1MQ==",
+  "_buildHash": "NC81OmFIVnBZMlhsdktEbHVwNDZSSGhyVXc9PTphMzhlMDY1MQ=="
+}
