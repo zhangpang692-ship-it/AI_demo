@@ -100,8 +100,8 @@ class Settings(BaseSettings):
         """获取最大分页大小（别名）"""
         return self.pagination_max_size
     
-    # CORS 配置
-    cors_origins: list[str] = ["http://localhost:3000", "http://localhost:8080"]
+    # CORS 配置（支持从环境变量覆盖，部署时如需开放所有来源可设为 ["*"]）
+    cors_origins: list[str] = ["http://localhost:3000", "http://localhost:8080", "*"]
 
     # JWT 配置（用于认证）
     secret_key: str = "your-secret-key-change-in-production"
