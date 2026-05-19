@@ -17,6 +17,7 @@ import { X, Minimize2, Maximize2 } from "lucide-react";
 import { ClientProvider } from "@/providers/ClientProvider";
 import { ChatProvider } from "@/providers/ChatProvider";
 import { ChatInterface } from "@/components/langgraph";
+import { getLangGraphUrl } from "@/lib/langgraph/utils";
 import { Assistant } from "@langchain/langgraph-sdk";
 import { cn } from "@/lib/utils";
 // FIXME  MS80OmFIVnBZMlhsdktEbHVwNDZWSEl5VEE9PTo3MTJhNjRjNA==
@@ -80,8 +81,7 @@ export function AIChatDialog({
     }
   }, [open]);
 
-  const deploymentUrl =
-    process.env.NEXT_PUBLIC_LANGGRAPH_API_URL || "http://localhost:2025";
+  const deploymentUrl = getLangGraphUrl();
   const apiKey = process.env.NEXT_PUBLIC_LANGSMITH_API_KEY || "";
 
   return (

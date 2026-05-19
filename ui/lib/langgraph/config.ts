@@ -7,6 +7,8 @@
  * 授权商业应用请联系微信：huice666
  */
 
+import { getLangGraphUrl } from "./utils";
+
 export interface StandaloneConfig {
   deploymentUrl: string;
   assistantId: string;
@@ -29,11 +31,11 @@ export function getConfig(): StandaloneConfig | null {
     }
   }
 
-  // Fall back to environment variables
-  const deploymentUrl = process.env.NEXT_PUBLIC_LANGGRAPH_API_URL;
+  // Fall back to environment variables or auto-detect from current host
+  const deploymentUrl = getLangGraphUrl();
   const assistantId = process.env.NEXT_PUBLIC_TESTCASE_GENERATOR_ASSISTANT_ID;
 
-  if (deploymentUrl && assistantId) {
+  if (assistantId) {
     return {
       deploymentUrl,
       assistantId,

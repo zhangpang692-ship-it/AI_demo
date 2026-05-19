@@ -16,6 +16,17 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function getLangGraphUrl(): string {
+  if (process.env.NEXT_PUBLIC_LANGGRAPH_API_URL) {
+    return process.env.NEXT_PUBLIC_LANGGRAPH_API_URL;
+  }
+  if (typeof window !== "undefined") {
+    const { protocol, hostname } = window.location;
+    return `${protocol}//${hostname}:2025`;
+  }
+  return "http://localhost:2025";
+}
+
 export function extractStringFromMessageContent(message: Message): string {
   return typeof message.content === "string"
     ? message.content

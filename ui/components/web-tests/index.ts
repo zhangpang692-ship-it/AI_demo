@@ -25,5 +25,5 @@ export { WebSubFunctionList } from "./web-sub-function-list";
 export { EnhancedTestArtifactsPanel } from "./test-artifacts-panel-enhanced";
 
 // 为了向后兼容，保留旧的导出
-export { WebFolderTree } from "./folder-tree";
+export { WebFunctionFolderTree as WebFolderTree } from "./folder-tree";
 // FIXME  MS8yOmFIVnBZMlhsdktEbHVwNDZiV3Q2VHc9PTpjODllYzI4Yg==

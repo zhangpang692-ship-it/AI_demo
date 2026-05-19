@@ -12,6 +12,7 @@
 // TODO  MS80OmFIVnBZMlhsdktEbHVwNDZiV3d6Y1E9PTo2Y2ZhNTYzNg==
 
 import * as React from "react";
+import { getLangGraphUrl } from "@/lib/langgraph/utils";
 import { useParams } from "next/navigation";
 import { toast } from "sonner";
 import {
@@ -710,7 +711,7 @@ export default function WebTestsPage() {
               )}
             >
               <ClientProvider
-                deploymentUrl={process.env.NEXT_PUBLIC_LANGGRAPH_API_URL || "http://localhost:2025"}
+                deploymentUrl={getLangGraphUrl()}
                 apiKey={process.env.NEXT_PUBLIC_LANGSMITH_API_KEY || ""}
               >
                 <AIChatContainer

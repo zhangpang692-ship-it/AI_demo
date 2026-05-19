@@ -12,6 +12,7 @@
 // eslint-disable  MS80OmFIVnBZMlhsdktEbHVwNDZaakpIZGc9PTo0M2IwYTBhNQ==
 
 import * as React from "react";
+import { getLangGraphUrl } from "@/lib/langgraph/utils";
 import { useParams } from "next/navigation";
 import { toast } from "sonner";
 import { MainLayout } from "@/components/layout";
@@ -556,7 +557,7 @@ export default function TestCasesPage() {
             )}
           >
             <ClientProvider
-              deploymentUrl={process.env.NEXT_PUBLIC_LANGGRAPH_API_URL || "http://localhost:2025"}
+              deploymentUrl={getLangGraphUrl()}
               apiKey={process.env.NEXT_PUBLIC_LANGSMITH_API_KEY || ""}
             >
               <AIChatContainer
