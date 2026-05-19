@@ -82,7 +82,10 @@ export function useChat({
     fetchStateHistory: true,
     // Revalidate thread list when stream finishes, errors, or creates new thread
     onFinish: handleFinish,
-    onError: onHistoryRevalidate,
+    onError: (error) => {
+      console.error("[useChat] Stream error:", error);
+      onHistoryRevalidate?.();
+    },
     onCreated: onHistoryRevalidate,
     ...(thread ? { thread } : {}),
   });
