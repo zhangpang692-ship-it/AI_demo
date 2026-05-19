@@ -92,6 +92,10 @@ export function useChat({
 
   const sendMessage = useCallback(
     (content: string) => {
+      console.log("[sendMessage] Sending message:", content);
+      console.log("[sendMessage] Assistant:", activeAssistant?.assistant_id);
+      console.log("[sendMessage] Client:", client ? "connected" : "null");
+
       const newMessage: Message = { id: uuidv4(), type: "human", content };
 
       // 从 assistant config 中提取 context 信息

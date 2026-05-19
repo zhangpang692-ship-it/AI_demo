@@ -22,7 +22,9 @@ export function getLangGraphUrl(): string {
   }
   if (typeof window !== "undefined") {
     const { protocol, hostname } = window.location;
-    return `${protocol}//${hostname}:2025`;
+    const url = `${protocol}//${hostname}:2025`;
+    console.log("[getLangGraphUrl] Auto-detected URL:", url);
+    return url;
   }
   return "http://localhost:2025";
 }
